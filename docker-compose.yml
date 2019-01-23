@@ -22,15 +22,6 @@ services:
      environment:
        WORDPRESS_DB_HOST: db:3306
        WORDPRESS_DB_USER: root
-       WORDPRESS_DB_PASSWORD: password
-       
-    phpmyadmin:
-      imgae: phpmyadmin/phpmyadmin
-      links: db:mysql
-      ports: 
-        - "8080:80"
-      environment:
-      PMA_HOST : mysql        
-      
+       WORDPRESS_DB_PASSWORD: password  
 volumes:
     db_data: {}
