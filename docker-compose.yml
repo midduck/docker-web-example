@@ -23,5 +23,5 @@ services:
        WORDPRESS_DB_HOST: db:3306
        WORDPRESS_DB_USER: root
        WORDPRESS_DB_PASSWORD: password  
-volumes:
+  volumes:
     db_data: {}
